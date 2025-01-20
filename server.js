@@ -28,3 +28,16 @@ app.post('/api/van', (request,response) =>{
    console.log(brand);
    response.send("car mil gye");
 })
+
+const mongoose= require('mongoose');
+mongoose.connect('mongodb://localhost:2701/myData',{
+    
+   //  useNewUrlParser: true,
+   //  useUnifiedTopology: true
+})
+.then(() => {
+    console.log("database connected");
+})
+.catch((error) => {
+    console.log("received an error");
+});
