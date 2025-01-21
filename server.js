@@ -30,7 +30,7 @@ app.post('/api/van', (request,response) =>{
 })
 
 const mongoose= require('mongoose');
-mongoose.connect('mongodb://localhost:2701/myData',{
+mongoose.connect('mongodb://localhost:27017/myData',{
     
    //  useNewUrlParser: true,
    //  useUnifiedTopology: true
