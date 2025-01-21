@@ -24,7 +24,7 @@ res.send("hello sir kaise ho");
 //post request..
 app.post('/api/van', (request,response) =>{
    const {name,brand}= request.body;
-   console.log(name);
+   console.log(name); 
    console.log(brand);
    response.send("car mil gye");
 })
@@ -41,3 +41,4 @@ mongoose.connect('mongodb://localhost:27017/myData',{
 .catch((error) => {
     console.log("received an error");
 });
+
