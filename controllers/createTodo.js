@@ -17,7 +17,7 @@ exports.createTodo= async(req,res) => {
 
         //send a json response with a success flag
 
-        res.status(2000).json(
+        res.status(200).json(
             {
                 success:true,
                 data:response,
