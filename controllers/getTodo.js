@@ -37,7 +37,7 @@ exports.getTodo= async(req,res) => {
 exports.getTodoById= async(req,res) => {
     try{
     // extract todo items basis on id
-    const id=req.params.id;
+    const id=req.params.id; // idea to fetch  the id....
     const todo= await Todo.findById( {_id:id});
 
     //data for given id not  found..
